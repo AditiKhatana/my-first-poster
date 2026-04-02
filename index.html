@@ -3,121 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album Poster - Red & Black</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@400;900&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-color: #050505;       /* Deep Black */
-            --accent-color: #e61e1e;   /* Racing Red */
-            --text-main: #ffffff;      
-            --text-dim: #e0e0e0;       /* Light Grey */
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
-        }
-
-        /* The Poster Container */
-        .poster-container {
-            background: rgba(20, 20, 20, 0.95);
-            border: 2px solid #1a1a1a;
-            width: 90%;
-            max-width: 1000px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding: 50px;
-            gap: 50px;
-            box-shadow: 0 0 100px rgba(230, 30, 30, 0.1);
-        }
-
-        /* Visual Side */
-        .album-art img {
-            width: 100%;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-            filter: grayscale(100%) contrast(120%);
-            border: 1px solid var(--text-dim);
-        }
-
-        /* Typography Styles */
-        .album-title {
-            font-family: 'Syncopate', sans-serif;
-            font-size: clamp(3rem, 7vw, 5.5rem);
-            line-height: 0.85;
-            font-weight: 900;
-            color: var(--accent-color);
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        .artist-name {
-            background: var(--accent-color);
-            color: #000;
-            display: inline-block;
-            padding: 5px 15px;
-            font-weight: 900;
-            letter-spacing: 3px;
-            font-size: 0.8rem;
-            margin-bottom: 30px;
-        }
-
-        .description {
-            color: var(--text-dim);
-            line-height: 1.5;
-            font-weight: 500;
-            border-left: 3px solid var(--accent-color);
-            padding-left: 20px;
-        }
-
-        .track-list {
-            margin-top: 30px;
-            font-family: monospace;
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
-
-        .track { border-bottom: 1px solid #1a1a1a; padding: 8px 0; }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .poster-container { grid-template-columns: 1fr; padding: 20px; }
-        }
-    </style>
+    <title>Discipline Over Dopamine</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="poster-container">
-        <section class="visual-side">
-            <div class="album-art">
-                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070" alt="Abstract Red Black">
+
+    <main class="container">
+        
+        <header>
+            <h1>My Sanctuary Progress</h1>
+            <p class="subtitle">Focusing on the basics, one step at a time.</p>
+        </header>
+
+        <section class="goal-list">
+            <div class="goal-item">
+                <span>✓</span>
+                <p>Mastered the CSS Box Model</p>
             </div>
-            <div class="track-list">
-                <div class="track">01 // THE_CONFLICT</div>
-                <div class="track">02 // NOISE_FLOOR</div>
-                <div class="track">03 // SYSTEM_RESET</div>
+            <div class="goal-item">
+                <span>✓</span>
+                <p>Launched first site on GitHub</p>
+            </div>
+            <div class="goal-item pending">
+                <span>○</span>
+                <p>Deep dive into Flexbox Layouts</p>
             </div>
         </section>
 
-        <section class="info-side">
-            <h1 class="album-title">FOCUS<br>REGAINED</h1>
-            <p class="artist-name">STUDY SESSION 01</p>
-            <div class="description">
-                <p>Designed for the moments when the world is too loud. Heavy weights, bold lines, and zero distractions.</p>
-            </div>
-        </section>
     </main>
+
 </body>
 </html>
