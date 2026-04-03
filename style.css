@@ -1,50 +1,78 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f7f6;
-    display: flex;     
-    justify-content: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    background-color: #1a1a1a;
+    padding: 1rem 5%;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff0000;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navlinks a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navlinks a:hover {
+    color: #ff0000;
 }
 
 .container {
-    background: white;
-    width: 350px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border-left: 5px solid #6c63ff;
-}
-
-h1 {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.subtitle {
-    color: #777;
-    font-size: 0.9rem;
-    margin-bottom: 30px;
-}
-
-.goal-item {
-    display: flex;     
+    height: 80vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
-    padding: 10px;
-    background: #fafafa;
+}
+
+.key-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1.5rem 2.5rem;
     border-radius: 8px;
-}
-
-.goal-item span {
-    color: #6c63ff;
     font-weight: bold;
-    margin-right: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-bottom: 4px solid #ff0000;
+    transition: transform 0.2s, background-color 0.2s;
 }
 
-.pending {
-    opacity: 0.6;
+.box:hover {
+    background-color: #ff0000;
+    color: white;
+    transform: translateY(-5px);
 }
